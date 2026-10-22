@@ -1,0 +1,19 @@
+# Ambiente virtuale
+venv/
+env/
+ENV/
+
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+
+# IDE e configurazioni locali
+.vscode/
+.idea/
+
+# File di log o checkpoint pesanti che non vanno su GitHub
+*.log
+*.pt
+*.pth
+weights/
