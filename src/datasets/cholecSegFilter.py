@@ -47,4 +47,4 @@ for video in video_folders:
                     Image.open(img_full_path).save(img_out_path)
                     Image.fromarray(binary_mask).save(mask_out_path)
 
-print("Elaborazione e filtraggio di CholecSeg8k completati con successo!")
+print("Elaboration completed. Processed images and masks are saved in the '03_processed/cholec_processed' directory.")
