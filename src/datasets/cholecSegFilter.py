@@ -4,7 +4,7 @@ from PIL import Image
 from tqdm import tqdm
 
 RAW_DIR = "/work/cvcs2026/blood_overflow/02_extracted/CholecSeg8k"
-PROCESSED_DIR = "/work/cvcs2026/blood_overflow/03_processed/cholec_processed"
+PROCESSED_DIR = "/work/cvcs2026/blood_overflow/03_processed/CholecSeg8k_processed"
 
 os.makedirs(os.path.join(PROCESSED_DIR, "images"), exist_ok=True)
 os.makedirs(os.path.join(PROCESSED_DIR, "masks"), exist_ok=True)
@@ -47,4 +47,4 @@ for video in video_folders:
                     Image.open(img_full_path).save(img_out_path)
                     Image.fromarray(binary_mask).save(mask_out_path)
 
-print("Elaboration completed. Processed images and masks are saved in the '03_processed/cholec_processed' directory.")
+print("Elaboration completed. Processed images and masks are saved in the '03_processed/CholecSeg8k_processed' directory.")
