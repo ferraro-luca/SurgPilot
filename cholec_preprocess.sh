@@ -8,7 +8,7 @@
 #SBATCH --time=02:00:00
 #SBATCH --output=/homes/mgualtieri01/cvcs2026/SurgPilot/logs/preprocess_%j.out
 #SBATCH --error=/homes/mgualtieri01/cvcs2026/SurgPilot/logs/preprocess_%j.err
-#SBATCH --account=mgualtieri01
+#SBATCH --account=cvcs2026
 
 # Carica il modulo Python del CINECA
 module load python/3.11.11-gcc-11.4.0
