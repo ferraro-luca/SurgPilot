@@ -2,7 +2,7 @@
 venv/
 env/
 ENV/
-logs/
+
 
 # Python cache
 __pycache__/
@@ -17,4 +17,6 @@ __pycache__/
 *.log
 *.pt
 *.pth
+*.out
+*.err
 weights/
