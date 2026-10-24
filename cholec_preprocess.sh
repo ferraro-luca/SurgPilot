@@ -11,7 +11,7 @@
 #SBATCH --account=cvcs2026
 
 # Carica il modulo Python del CINECA
-module load python/3.11.11-gcc-11.4.0
+module load python/3.11.15
 
 # Attiva il tuo ambiente virtuale locale
 source /homes/mgualtieri01/cvcs2026/SurgPilot/venv/bin/activate
