@@ -1,0 +1,3 @@
+[submodule "models/blood_det"]
+	path = models/blood_det
+	url = https://github.com/PJLallen/SurgBlood.git
