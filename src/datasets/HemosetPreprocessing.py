@@ -10,7 +10,7 @@ os.makedirs(os.path.join(PROCESSED_HEMO_DIR, "masks"), exist_ok=True)
 
 processed_count = 0
 
-# Itera attraverso tutti i 11 maiali
+
 for i in range(1, 12):
     pig_name = f"pig{i}"
     pig_path = os.path.join(HEMO_DIR, pig_name)
@@ -27,15 +27,14 @@ for i in range(1, 12):
     img_files = [f for f in os.listdir(imgs_dir) if f.endswith(".png")]
     
     for img_file in img_files:
-        base_name = img_file.replace(".png", "") # es. "000030"
+        base_name = img_file.replace(".png", "") 
         mask_file = f"{base_name}_mask.png"
         
         src_img_path = os.path.join(imgs_dir, img_file)
         src_mask_path = os.path.join(labels_dir, mask_file)
         
         if os.path.exists(src_mask_path):
-            # Creiamo un nome unico che unisce il maiale e il frame (es. pig1_000030.png)
-            # In questo modo evitiamo qualsiasi collisione tra maiali diversi!
+            
             unique_filename = f"{pig_name}_{base_name}.png"
             unique_maskname = f"{pig_name}_{base_name}_mask.png"
             

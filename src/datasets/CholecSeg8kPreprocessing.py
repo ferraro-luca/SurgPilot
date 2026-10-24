@@ -8,7 +8,7 @@ PROCESSED_DIR = "/work/cvcs2026/blood_overflow/03_processed/CholecSeg8k_processe
 os.makedirs(os.path.join(PROCESSED_DIR, "images"), exist_ok=True)
 os.makedirs(os.path.join(PROCESSED_DIR, "masks"), exist_ok=True)
 
-blood_pixel_value = 24  # Valore per il sangue nelle watershed masks[cite: 2]
+blood_pixel_value = 24  
 
 video_folders = [f for f in os.listdir(RAW_DIR) if os.path.isdir(os.path.join(RAW_DIR, f))]
 processed_count = 0
@@ -26,7 +26,7 @@ for video in video_folders:
         img_files = [f for f in files if f.endswith("_endo.png") and not f.endswith("mask.png")]
         
         for img_file in img_files:
-            # Ricava "frame_80" da "frame_80_endo.png"
+            
             base_name = img_file.replace("_endo.png", "")
             
             watershed_mask_file = f"{base_name}_endo_watershed_mask.png"
@@ -44,7 +44,7 @@ for video in video_folders:
                 binary_mask = (mask_np == blood_pixel_value).astype(np.uint8) * 255
                                
                 if np.sum(binary_mask) > 0:
-                    # Nomi richiesti: frame_n.png e frame_n_mask.png
+                    
                     img_out_filename = f"{base_name}.png"
                     mask_out_filename = f"{base_name}_mask.png"
                     
