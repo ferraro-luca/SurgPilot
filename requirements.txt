@@ -49,15 +49,14 @@ protobuf==7.36.2
 pyparsing==3.3.3
 python-dateutil==3.0.0
 PyYAML==6.0.3
--e git+https://github.com/PJLallen/SurgBlood.git@5073cf50bd0c809efde81be2c44fd2676f0a7497#egg=sam2_ext&subdirectory=../../../models/blood_det/sam2
-setuptools==78.1.0
+setuptools
 six==1.17.0
 sympy==1.14.0
 tensorboardX==2.6.5
-torch==2.14.1+cu126
-torchvision==0.29.1+cu126
+torch
+torchvision
 tqdm==4.70.1
-triton==3.8.0
+triton
 truststore==0.10.5
 typing_extensions==4.16.0
 tzdata==2026.5
