@@ -1,0 +1,84 @@
+_wandb:
+    value:
+        cli_version: 0.31.0
+        e:
+            01a1cfad-eb7a-7c47-b70b-eee80e3fcad4:
+                codePath: prova.py
+                codePathLocal: prova.py
+                cpu:
+                    model: Intel(R) Xeon(R) W-2235 CPU @ 3.80GHz
+                cpu_count: 6
+                cpu_count_logical: 12
+                disk:
+                    /:
+                        total: "210241560576"
+                        used: "20408324096"
+                email: 316878@studenti.unimore.it
+                executable: /homes/mgualtieri01/cvcs2026/SurgPilot/venv/bin/python
+                git:
+                    commit: 612cc0133bc809a537db129f0f71629b7aac3710
+                    remote: https://github.com/ferraro-luca/SurgPilot.git
+                host: pippobaudo
+                memory:
+                    total: "67084845056"
+                os: Linux-5.15.0-181-generic-x86_64-with-glibc2.35
+                program: /homes/mgualtieri01/cvcs2026/SurgPilot/prova.py
+                python: CPython 3.13.13
+                root: /homes/mgualtieri01/cvcs2026/SurgPilot
+                slurm:
+                    cluster_name: aimagelab
+                    conf: /etc/slurm/slurm.conf
+                    cpus_on_node: "8"
+                    cpus_per_task: "8"
+                    gtids: "0"
+                    job_account: cvcs2026
+                    job_cpus_per_node: "8"
+                    job_end_time: "1794492840"
+                    job_gid: "44378"
+                    job_id: "201323"
+                    job_name: preprocess
+                    job_nodelist: pippobaudo
+                    job_num_nodes: "1"
+                    job_partition: all_usr_prod
+                    job_qos: all_qos_sprod
+                    job_start_time: "1794485640"
+                    job_uid: "92552"
+                    job_user: mgualtieri01
+                    jobid: "201323"
+                    localid: "0"
+                    mem_per_node: "32768"
+                    nnodes: "1"
+                    nodeid: "0"
+                    nodelist: pippobaudo
+                    nprocs: "1"
+                    ntasks: "1"
+                    oom_kill_step: "0"
+                    prio_process: "0"
+                    procid: "0"
+                    submit_dir: /homes/mgualtieri01/cvcs2026/SurgPilot
+                    submit_host: ailb-login-03
+                    task_pid: "3457149"
+                    tasks_per_node: "1"
+                    topology_addr: sw-01-25.sw-02-25.sw-03-25..sw-03-10.pippobaudo
+                    topology_addr_pattern: switch.switch.switch.switch.switch.node
+                    tres_per_task: cpu=8
+                startedAt: "2026-11-12T12:14:04.141660Z"
+                writerId: 01a1cfad-eb7a-7c47-b70b-eee80e3fcad4
+        m: []
+        python_version: 3.13.13
+        t:
+            "3":
+                - 2
+                - 16
+            "4": 3.13.13
+            "5": 0.31.0
+            "12": 0.31.0
+            "13": linux-x86_64
+architecture:
+    value: CNN
+dataset:
+    value: CIFAR-100
+epochs:
+    value: 10
+learning_rate:
+    value: 0.02
