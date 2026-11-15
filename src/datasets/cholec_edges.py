@@ -3,14 +3,14 @@ import cv2
 import numpy as np
 
 # Path alla cartella principale del nuovo dataset diviso
-DATASET_DIR = "/work/cvcs2026/blood_overflow/03_processed/cholec_splitted"  # Sostituisci col tuo percorso
+DATASET_DIR = "/work/cvcs2026/blood_overflow/03_processed/Hemo_Cholec_splitted"  # Sostituisci col tuo percorso
 
 # Consideriamo SOLO lo split di train
 train_mask_root = os.path.join(DATASET_DIR, "train", "videos-mask")
-train_edge_root = os.path.join(DATASET_DIR, "train", "videos-edge")
+train_edge_root = os.path.join(DATASET_DIR, "train", "videos-mask-edge")
 
 if os.path.exists(train_mask_root):
-    print("Generazione 'videos-edge' in corso SOLO per lo split di TRAIN...")
+    print("Generazione 'videos-mask-edge' in corso SOLO per lo split di TRAIN...")
     
     # Kernel 3x3 per l'estrazione del contorno
     kernel = np.ones((3, 3), np.uint8)
@@ -40,6 +40,6 @@ if os.path.exists(train_mask_root):
                 edge_path = os.path.join(seq_edge_dir, mask_file)
                 cv2.imwrite(edge_path, edge)
 
-    print("\nGenerazione delle sotto-cartelle 'videos-edge' completata con successo nel TRAIN!")
+    print("\nGenerazione delle sotto-cartelle 'videos-mask-edge' completata con successo nel TRAIN!")
 else:
     print(f"Errore: Cartella non trovata in {train_mask_root}")
